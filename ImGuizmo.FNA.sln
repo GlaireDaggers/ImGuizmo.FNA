@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGuizmo.FNA", "ImGuizmo.FNA\ImGuizmo.FNA.csproj", "{CF338DDA-4659-4BCC-94B2-FDF280C63BE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FNA.Core", "deps\FNA\FNA.Core.csproj", "{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGui.NET", "deps\ImGui.NET\src\ImGui.NET\ImGui.NET.csproj", "{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImGuizmo.NET", "deps\ImGui.NET\src\ImGuizmo.NET\ImGuizmo.NET.csproj", "{36F5653B-E186-4692-B73F-079801BBA13B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deps", "deps", "{D0FBA411-6940-4FDE-9B38-7FEB2B526CA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF338DDA-4659-4BCC-94B2-FDF280C63BE6}.Debug|x64.ActiveCfg = Debug|x64
+		{CF338DDA-4659-4BCC-94B2-FDF280C63BE6}.Debug|x64.Build.0 = Debug|x64
+		{CF338DDA-4659-4BCC-94B2-FDF280C63BE6}.Release|x64.ActiveCfg = Release|x64
+		{CF338DDA-4659-4BCC-94B2-FDF280C63BE6}.Release|x64.Build.0 = Release|x64
+		{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C}.Debug|x64.ActiveCfg = Debug|x64
+		{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C}.Debug|x64.Build.0 = Debug|x64
+		{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C}.Release|x64.ActiveCfg = Release|x64
+		{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C}.Release|x64.Build.0 = Release|x64
+		{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44}.Debug|x64.ActiveCfg = Debug|x64
+		{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44}.Debug|x64.Build.0 = Debug|x64
+		{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44}.Release|x64.Build.0 = Release|Any CPU
+		{36F5653B-E186-4692-B73F-079801BBA13B}.Debug|x64.ActiveCfg = Debug|x64
+		{36F5653B-E186-4692-B73F-079801BBA13B}.Debug|x64.Build.0 = Debug|x64
+		{36F5653B-E186-4692-B73F-079801BBA13B}.Release|x64.ActiveCfg = Release|Any CPU
+		{36F5653B-E186-4692-B73F-079801BBA13B}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{319EB8B1-BBDD-4EC6-8503-CB2215A4A71C} = {D0FBA411-6940-4FDE-9B38-7FEB2B526CA8}
+		{CE7862F7-D6C4-4044-ADC1-AD71BFB53E44} = {D0FBA411-6940-4FDE-9B38-7FEB2B526CA8}
+		{36F5653B-E186-4692-B73F-079801BBA13B} = {D0FBA411-6940-4FDE-9B38-7FEB2B526CA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF1DF76F-11B6-4888-B7E6-B95993F71B9D}
+	EndGlobalSection
+EndGlobal

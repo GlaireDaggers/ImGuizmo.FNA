@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImGuizmo.FNA": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
