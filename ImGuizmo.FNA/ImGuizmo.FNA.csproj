@@ -53,15 +53,15 @@
 	</ItemGroup>
 	
 	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
-		<Content Include="../deps/fnalibs/lib64/libFAudio.so.0">
+		<Content Include="../deps/fnalibs/lib64/libFAudio.so">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/lib64/libFNA3D.so.0">
+		<Content Include="../deps/fnalibs/lib64/libFNA3D.so">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/lib64/libSDL2-2.0.so.0">
+		<Content Include="../deps/fnalibs/lib64/libSDL2-2.0.so">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
