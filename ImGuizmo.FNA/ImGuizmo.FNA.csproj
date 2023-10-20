@@ -16,72 +16,72 @@
 		<ProjectReference Include="..\deps\ImGui.NET\src\ImGui.NET\ImGui.NET.csproj" />
 		<ProjectReference Include="..\deps\ImGui.NET\src\ImGuizmo.NET\ImGuizmo.NET.csproj" />
 	</ItemGroup>
-	
-	<ItemGroup>
-		<Content Include="../deps/fnalibs/x64/FAudio.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/fnalibs/x64/FAudio.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/x64/FNA3D.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/fnalibs/x64/FNA3D.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/x64/SDL2.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/fnalibs/x64/SDL2.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/x64/libtheorafile.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/fnalibs/x64/libtheorafile.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/imguilibs/x64/cimgui.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/imguilibs/x64/cimgui.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/imguilibs/x64/cimguizmo.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/imguilibs/x64/cimguizmo.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/imguilibs/x64/cimnodes.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/imguilibs/x64/cimnodes.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/imguilibs/x64/cimplot.dll" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
-			<Link>%(Filename)%(Extension)</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="../deps/imguilibs/x64/cimgui.pdb" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
-			<Link>%(Filename)%(Extension)</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="../deps/imguilibs/x64/cimguizmo.pdb" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
-			<Link>%(Filename)%(Extension)</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="../deps/imguilibs/x64/cimnodes.pdb" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
-			<Link>%(Filename)%(Extension)</Link>
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-		<Content Include="../deps/imguilibs/x64/cimplot.pdb" Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+		<Content Include="../deps/imguilibs/x64/cimplot.dll">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
 	
-	<ItemGroup>
-		<Content Include="../deps/fnalibs/lib64/libFAudio.so.0" Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+	<ItemGroup Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+		<Content Include="../deps/fnalibs/lib64/libFAudio.so.0">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/lib64/libFNA3D.so.0" Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+		<Content Include="../deps/fnalibs/lib64/libFNA3D.so.0">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/lib64/libSDL2-2.0.so.0" Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+		<Content Include="../deps/fnalibs/lib64/libSDL2-2.0.so.0">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
-		<Content Include="../deps/fnalibs/lib64/libtheorafile.so" Condition="'$(RuntimeIdentifier)' == 'linux-x64'">
+		<Content Include="../deps/fnalibs/lib64/libtheorafile.so">
+			<Link>%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="../deps/imguilibs/linux64/cimgui.so">
+			<Link>%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="../deps/imguilibs/linux64/cimguizmo.so">
+			<Link>%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="../deps/imguilibs/linux64/cimnodes.so">
+			<Link>%(Filename)%(Extension)</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="../deps/imguilibs/linux64/cimplot.so">
 			<Link>%(Filename)%(Extension)</Link>
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</Content>
