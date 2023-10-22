@@ -10,6 +10,12 @@ using ImGuizmoNET;
 
 namespace ImGuiNET.SampleProgram.XNA
 {
+    static unsafe class ImGuizmoExt
+    {
+        [DllImport("cimguizmo", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void igSetAllocatorFunctions(IntPtr alloc_func, IntPtr free_func, void* user_data);
+    }
+
     /// <summary>
     /// ImGui renderer for use with XNA-likes (FNA & MonoGame)
     /// </summary>
@@ -47,6 +53,18 @@ namespace ImGuiNET.SampleProgram.XNA
             var context = ImGui.CreateContext();
             ImGui.SetCurrentContext(context);
             ImGuizmo.SetImGuiContext(context);
+
+            unsafe
+            {
+                // ImGuizmo, ImNodes, & ImPlot all need to have their ImGui contexts & allocator functions set up like this if you use them!
+                // That way they're all working with the same global context. Otherwise you'll end up with seemingly random & very hard to debug crashes
+
+                IntPtr p_alloc_fn = IntPtr.Zero, p_free_fn = IntPtr.Zero;
+                void* p_userdata = null;
+                ImGui.GetAllocatorFunctions(ref p_alloc_fn, ref p_free_fn, ref p_userdata);
+
+                ImGuizmoExt.igSetAllocatorFunctions(p_alloc_fn, p_free_fn, p_userdata);
+            }
 
             var io = ImGui.GetIO();
             io.ConfigFlags |= ImGuiConfigFlags.DockingEnable;
